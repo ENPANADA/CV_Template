@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap);
+
+:root {
+  --primary-color: #33a4c9;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+.img {
+  border-radius: 90px;
+  border: solid #fff;
+  height: 175px;
+  width: 175px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: #cfcfcf;
+  margin: 0;
+}
+
+.Titulo {
+  text-align: center;
+  color: var(--primary-color);
+  font: 400 40px oswald, sans-serif;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Presentacion {
+  padding: 30px 15px;
+  background: var(--primary-color);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  border-radius: 0 30px;
+}
+
+.Presentacion h1 {
+  font: 400 30px oswald, sans-serif;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.Presentacion h2 {
+  font: 25px "Stick No Bills", sans-serif;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.Informacion {
+  margin: 15px 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Informacion .Contenedor {
+  max-width: 800px;
+  width: 100%;
+}
+
+.Informacion .V2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.Informacion .V3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.Informacion .Contenedor h3 {
+  color: var(--primary-color);
+  font: 700 22px oswald, sans-serif;
+}
+
+.Informacion .Contenedor h4 {
+  color: var(--primary-color);
+  font: 700 18px oswald, sans-serif;
+  border-left: 3px solid var(--primary-color);
+  padding-left: 10px;
+}
+
+.Informacion .Contenedor p {
+  color: #636363;
+  font: 700 16px oswald, sans-serif;
+  text-align: justify;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.Informacion .Contenedor hr {
+  border-color: var(--primary-color);
+}
+
+.Informacion .Contenedor li {
+  list-style: none;
+}
+
+.Informacion .Contenedor .HI {
+  color: var(--primary-color);
+}
+
+.Barras .valores {
+  padding: 0px;
+}
+
+.Barras .valores li {
+  margin-bottom: 21px;
+  position: relative;
+  list-style: none;
+  color: #636363;
+  font: 700 16px oswald, sans-serif;
+}
+
+.Barras .valores li:after {
+  background: #cfcfcf;
+  bottom: -10px;
+  content: " ";
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Barras .valores li .Barra {
+  background: var(--primary-color);
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  width: inherit;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.Porcentaje {
+  position: absolute;
+  right: 0;
+  text-align: end;
+  color: var(--primary-color);
+}
+
+.Contacto {
+  padding: 30px 15px;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  gap: 15px;
+  font: 700 20px oswald, sans-serif;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top: 4px solid #636363;
+}
+
+.Contacto h3 {
+  margin: 0;
+}
+
+.Contacto .Datos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.Contacto .CV {
+  text-align: right;
+  border-right: 1px solid #fff;
+  padding: 0 10px 0 0;
+}
+
+.Contacto .Data {
+  padding: 0 0 0 10px;
+  border-left: 1px solid #fff;
+}
+
+.Contacto .Datos li {
+  list-style: none;
+  font: 400 18px oswald, sans-serif;
+}
+
+.PiePagina {
+  background-color: rgb(30, 30, 30);
+  padding: 5rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.PiePagina .DonTiburcio {
+  width: 7rem;
+  height: auto;
+}
+
+.PiePagina .Separador {
+  border: 1px solid #fff;
+  height: 100px;
+  margin: 0;
+}
+
+.PiePagina .ContactoGit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  padding: 1.2rem;
+  color: #fff;
+  font: 700 18px oswald, sans-serif;
+}
+
+.PiePagina .ContactoGit:hover .ENPANADA {
+  color: var(--primary-color);
+}
+
+.PiePagina .ContactoGit .ENPANADA {
+  transition: color 1s ease;
+}
+
+.PiePagina .ContactoGit .git {
+  width: 50px;
+}
+
+@media (max-width: 500px) {
+  .PiePagina {
+    padding: 3rem 0;
+  }
+}
